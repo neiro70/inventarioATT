@@ -4,6 +4,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+	<!-- Cambiar configuracion de correo -->
 	<property name="host" value="mx1.hostinger.mx" />
 	<property name="port" value="587" />
 	<property name="username" value="jorge.luis.martinez.alfonso@ideasystems.esy.es" />
