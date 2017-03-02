@@ -83,13 +83,13 @@ public class ActivoController {
 	                for (FileItem item : multiparts) {
 	                if (!item.isFormField()) {
 	                String name = new File(item.getName()).getName();
-	                item.write(new File("/Users/neiro70/Documents/workspace-sts-3.8.3.RELEASE/inventarioATT/src/main/webapp/activo/"+name));
+	                item.write(new File("E://Temp"+name));
 	              
 	                
 	        		//String filename=request.getParameter("idFile");
 	        		Workbook workbook = null;
 	        		try {
-	        		workbook = Workbook.getWorkbook(new File("/Users/neiro70/Documents/workspace-sts-3.8.3.RELEASE/inventarioATT/src/main/webapp/activo/" + name));
+	        		workbook = Workbook.getWorkbook(new File("E://Temp" + name));
 	        		} catch (BiffException e) {
 	        		// TODO Auto-generated catch block
 	        		e.printStackTrace();
@@ -138,7 +138,7 @@ public class ActivoController {
 	        		parameters.put("to", "neiro70@gmail.com");
 	        		parameters.put("subject", "Carga de equipos");
 	        		parameters.put("msg", "Numero de registros:"+sheet.getRows());
-	        		notificarService.sendMail(parameters);
+//	        		notificarService.sendMail(parameters);
 	                
 	                }
 	                }
