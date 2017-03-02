@@ -7,9 +7,9 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/basex" />
-		<property name="username" value="jorge" />
-		<property name="password" value="jm4rt1n3z" />
+		<property name="url" value="jdbc:mysql://185.28.21.241:3306/u131832063_bdatt" />
+		<property name="username" value="u131832063_bdatt" />
+		<property name="password" value="bdatt2017" />
 	</bean>
 	
 	<bean id="ActivoDAO" class="com.mx.att.inventario.dao.imp.ActivoDAOImp">
